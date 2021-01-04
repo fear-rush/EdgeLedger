@@ -1,0 +1,26 @@
+/* Section: What We Do */
+
+#what .items .item{
+  display: flex;
+}
+
+#what .items .item i{
+  align-self: center;
+  margin-right: 1rem;
+}
+
+#what .items .item p{
+  text-align: left;
+}
+
+#what .items .item:nth-child(2) h3{
+  font-size: 16px;
+
+}
+
+/* Section: Contact */
+
+
+#contact .contact-form{
+  flex-basis: 30%;
+}

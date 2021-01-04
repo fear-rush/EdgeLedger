@@ -1,0 +1,289 @@
+
+/* Roboto Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* CSS Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+p{
+  line-height: 1.3rem;
+  margin: 1rem 0;
+}
+
+/* Utility Class */
+
+.text-primary{
+  color: #93cb52;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.l-heading{
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.lead-desc{
+  padding-bottom: 1rem;
+}
+
+.btn{
+  color: #fff;
+  background-color: #93cb52;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+}
+
+.btn-dark{
+  color: #fff;
+  background-color: #333;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+}
+
+.btn-dark:hover{
+  background-color: black;
+}
+
+.m-heading{
+  font-size: 1.7rem;
+  margin-bottom: 0.75rem;
+}
+
+.container{
+  max-width: 1100px;
+  margin: auto;
+}
+
+.bg-light{
+  background: #f4f4f4;
+  color: #333
+}
+
+.bg-dark{
+  background: #333;
+  color: #f4f4f4;
+}
+
+.bg-primary{
+  background:  #93cb52;
+  color: #f4f4f4;
+}
+
+
+/* Padding */
+.py-1{
+  padding: 1rem 0;
+}
+
+.py-2{
+  padding: 1.5rem 0;
+}
+
+.py-3{
+  padding: 2rem 0;
+}
+
+.p-1{
+  padding: 1rem;
+}
+
+.p-2{
+  padding: 1.5rem;
+}
+
+.p-3{
+  padding: 2rem;
+}
+
+
+/* Navbar */
+
+#navbar{
+  display: flex;
+  background-color: #333;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+#navbar i{
+  padding: 0.5rem;
+}
+
+#navbar .logo{
+  margin-top: 0.1rem;
+}
+
+#navbar ul{
+  display: flex;
+}
+
+#navbar ul li a{
+  display: block;
+  color: #fff;
+  padding: 0.75rem;
+  margin-top: 0.1rem;
+}
+
+#navbar ul li a:hover{
+  background-color: #93cb52;
+}
+
+/* Section: Showcase */
+#showcase{
+  background: url(../img/showcase.jpg) no-repeat center center/cover;
+  height: calc(100vh - 45px);
+  position: relative;
+}
+
+#showcase::after{
+  content: "";
+  background: black;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+#showcase .showcase-content{
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: calc(100vh - 45px);
+  position: relative;
+  z-index: 2;
+}
+
+/* Section: What */
+
+#what .items{
+  display: flex;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  flex: 1;
+}
+
+#what i{
+  background: #93cb52;
+  border-radius: 50%;
+  padding: 0.75rem;
+  margin-bottom: 1rem
+}
+
+/* Section: Who We Are */
+
+#who{
+  display:flex;
+}
+
+#who div{
+  flex: 1;
+}
+
+#who h3{
+  margin: 1rem 0;
+}
+
+
+#who .img-left{
+  background: url(../img/people.jpg) no-repeat center center/cover;
+}
+
+#who ul li{
+  padding: 0.5rem 0;
+  border-bottom: 1px #f4f4f4 dotted;
+}
+
+#who ul li:last-child{
+  border-bottom: none;
+}
+
+/* Section: Our Clients */
+
+
+#clients .client-items{
+  display:flex;
+}
+
+#clients .client-items img{
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+/* Section: Contact */
+
+#contact{
+  display: flex;
+  margin-top: 2rem;
+}
+
+#contact .contact-form label{
+  display:block;
+}
+
+#contact .map,
+#contact .contact-form{
+  flex-grow: 1;
+  flex-basis: 50%;
+}
+
+
+#contact .contact-form .form-group{
+  margin-bottom: 1rem;
+}
+
+#contact .contact-form input, #contact .contact-form textarea{
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+#contact .btn-dark{
+  cursor: pointer;
+}
+
+
+/* MAP Javascript API */
+
+#contact #map {
+width: 100vw;
+}
+
+
+
+
+
+
+
